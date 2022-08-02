@@ -3,6 +3,7 @@
     "displayName": "Carbon",
     "description": "This is the official Carbon extension for Visual Studio Code.",
     "version": "0.0.1",
+    "author": "Nathaniel Mejia & Rishaan Desai",
     "icon": "carbon-logo.png",
     "engines": {
         "vscode": "^1.69.0"
@@ -28,6 +29,9 @@
                 }
             }
         ],
+        "capabilities": {
+            "hoverProvider": "true"
+        },
         "grammars": [
             {
                 "language": "carbon",
@@ -39,10 +43,6 @@
             {
                 "language": "carbon",
                 "path": "./snippets.json"
-            },
-            {
-                "language": "carbon",
-                "path": "./completions.json"
             }
         ]
     },
@@ -50,6 +50,9 @@
         "vscode-languageclient": "^8.0.2"
     },
     "files.associations": {
-		"*.carbon": "carbon"
-	}
+        "*.carbon": "carbon"
+    },
+    "devDependencies": {
+        "esbuild": "^0.14.51"
+    }
 }
