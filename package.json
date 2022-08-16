@@ -1,4 +1,22 @@
 {
+    "author": {
+        "name": "Rishaan Desai",
+        "email": "contact@rishaandesai.me",
+        "url": "https://rishaandesai.me"
+    },
+    "bugs": {
+        "url": "https://github.com/Blackhole1123/CarbonVSCode/issues"
+    },
+    "contributors": [
+        {
+            "name": "Nathaniel Mejia",
+            "url": "github.com/JSKF"
+        }
+    ],
+    "funding": {
+        "url": "https://github.com/Blackhole1123/sponsors"
+    },
+    "preview": true,
     "name": "carbon",
     "displayName": "Carbon",
     "description": "This is the official Carbon extension for Visual Studio Code.",
@@ -11,10 +29,19 @@
         "type": "git",
         "url": "https://github.com/Blackhole1123/Carbon-VSCode-Extension"
     },
+    "galleryBanner": {
+        "color": "#000000",
+        "theme": "dark"
+    },
+    "license": "MIT",
     "categories": [
         "Programming Languages"
     ],
+    "readme": "https://raw.githubusercontent.com/Blackhole1123/Carbon-VSCode-Extension/master/extension.md",
     "contributes": {
+        "capabilities": {
+            "hoverProvider": "true"
+        },
         "languages": [
             {
                 "id": "carbon",
@@ -43,10 +70,6 @@
             {
                 "language": "carbon",
                 "path": "./snippets.json"
-            },
-            {
-                "language": "carbon",
-                "path": "./completions.json"
             }
         ]
     },
